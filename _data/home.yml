@@ -5,39 +5,45 @@ skills:
   - name: Python
     icon: python.png
     text:
-      - Python is the language I use most at work and enjoy using at home. I have a lot of experience using packages like <a href='https://www.palletsprojects.com/p/flask/'>Flask</a> and <a href='https://www.sqlalchemy.org/'>SQLAlchemy</a> for building web-based solutions.
-      - I really enjoy using the language and find it useful outside of work for webscraping, solving <a href='#'>Euler Project</a> problems, or other ideas I have.
+      - I have over 2 years of professional experience using packages such as <a href='https://www.palletsprojects.com/p/flask/'>Flask</a> and <a href='https://www.sqlalchemy.org/'>SQLAlchemy</a> to build web-based solutions.
+      - I have also used Python to parse and analyse application logs as well as building dashboards.
+      - I find it useful outside of work for web scraping, solving <a href='https://projecteuler.net/'>Project Euler</a> problems, or other project ideas I have.
   - name: Docker
     icon: docker.png
     text:
-      - I use Docker for containerization of web projects, and have experience deploying and maintaining web services on a cluster using Docker Swarm.
+      - I use Docker for containerization of web projects, and have experience deploying and maintaining services on a VM cluster using Docker Swarm.
       - Besides use at work, I maintain a small homelab at home to host small services and help me continue to learn.
   - name: Web Development
     icon: javascript.png
     text:
-      - I really enjoy (trying to) make web pages look nice. When I can't do that, I just make things work as they're supposed to.
-      - I am competent with HTML, CSS and Javascript. I've built a lot of frontends for various jobs, and have some hobby-level experience with <a href='#'>React</a></p>
+      - I enjoy making web pages work as they’re supposed to.
+      - I am competent with HTML, CSS and Javascript.
+      - I've built a lot of frontends for various projects, and have some hobby-level experience with <a href='https://reactjs.org/'>React</a>.
+      - I also have automated frontend testing experience with <a href='https://selenium.dev/'>Selenium</a>.
 additional_skills:
   - SQL
   - GitLab CI/CD
   - Bash Scripting
   - Django
-  - C
-  - C++
   - Linux
+  - Selenium
   - Javascript
   - React
+  - C
+  - C++
   - Chinese (Mandarin)
 experience:
   - title: "QBE: Grad -> Software Engineer"
     time: Feb 2018 -> Present
     text:
-      - I began at QBE in the AusPac Data and Analytics team in a graduate position, and 'graduated' into my current Software Engineer role.
-      - During my time at QBE I have worked on web applications that have brought millions in savings to the company. I also worked on deployments and maintenance for several services on our VM cluster.
+      - I began at QBE in the AusPac Data and Analytics team in a graduate position, and “graduated” into my current Software Engineer role.
+      - During my time at QBE I have worked on web applications that have brought millions in savings to the company.
+      - I built an authentication service used by several internal applications.
+      - I also worked on deployments and maintenance for several other services on a VM cluster.
   - title: "UNSW: Computer Science Tutor"
     time: Jul 2016 -> Dec 2017
     text:
-      - I began tutoring for UNSW in second year for subjects that I enjoyed. This involved teaching classes, instructing labs, and marking homework/assignments.
+      - This involved preparing and teaching classes, instructing labs, and marking homework/assignments.
       - I tutored <em>Software Construction Techniques</em>, <em>Introduction to Programming</em>, and <em>Computer System Fundamentals</em>.
 contact:
   - name: Github

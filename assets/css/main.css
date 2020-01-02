@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: monospace;
+}
+hr {
+    width: 80%;
+}
+.content {
+    border-radius: 20px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 2em;
+    text-align: center;
+    background-color: white;
+}
+.abstract {
+    width: 500px;
+    margin: auto;
+    font-style: italic;
+}
+.section-container {
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 576px) {
+    .section-container {
+        flex-direction: row;
+    }
+}
+.section {
+    flex: 1;
+    margin: 1em;
+}
+.section-text>p>a {
+    text-decoration: none;
+    font-weight: bold;
+}
+.icon {
+    height: 120px;
+    margin: auto;
+}
+.skills {
+    margin-bottom: 2em;
+}
+.skills>span {
+    display: inline-block;
+    border: 1px solid #888;
+    border-radius: 3px;
+    padding: 2px;
+    margin-bottom: 4px;
+    background-color: #eee;
+    font-family: monospace;
+    font-weight: bold;
+}
+.experience-container {
+    display: flex;
+}
+.experience {
+    flex: 1
+}
+.experience>img, .experience>svg {
+    width: 200px;
+    margin: auto;
+}
+.experience-detail {
+    flex: 1 auto auto
+}
+.link {
+    text-decoration: none;
+}
+.contact {
+    height: 32px;
+}

@@ -1,0 +1,51 @@
+abstract:
+  - I am a software engineer based in Sydney, Australia. Most of my work involves building web applications and the architecture surrounding them. I am most proficient in Python and use it for most of my development but like to dabble in other languages and projects.
+  - I graduated from the University of New South Wales, and am currently employed at QBE Insurance as a Software Engineer.
+skills:
+  - name: Python
+    icon: python.png
+    text:
+      - Python is the language I use most at work and enjoy using at home. I have a lot of experience using packages like <a href='https://www.palletsprojects.com/p/flask/'>Flask</a> and <a href='https://www.sqlalchemy.org/'>SQLAlchemy</a> for building web-based solutions.
+      - I really enjoy using the language and find it useful outside of work for webscraping, solving <a href='#'>Euler Project</a> problems, or other ideas I have.
+  - name: Docker
+    icon: docker.png
+    text:
+      - I use Docker for containerization of web projects, and have experience deploying and maintaining web services on a cluster using Docker Swarm.
+      - Besides use at work, I maintain a small homelab at home to host small services and help me continue to learn.
+  - name: Web Development
+    icon: javascript.png
+    text:
+      - I really enjoy (trying to) make web pages look nice. When I can't do that, I just make things work as they're supposed to.
+      - I am competent with HTML, CSS and Javascript. I've built a lot of frontends for various jobs, and have some hobby-level experience with <a href='#'>React</a></p>
+additional_skills:
+  - SQL
+  - GitLab CI/CD
+  - Bash Scripting
+  - Django
+  - C
+  - C++
+  - Linux
+  - Javascript
+  - React
+  - Chinese (Mandarin)
+experience:
+  - title: "QBE: Grad -> Software Engineer"
+    time: Feb 2018 -> Present
+    text:
+      - I began at QBE in the AusPac Data and Analytics team in a graduate position, and 'graduated' into my current Software Engineer role.
+      - During my time at QBE I have worked on web applications that have brought millions in savings to the company. I also worked on deployments and maintenance for several services on our VM cluster.
+  - title: "UNSW: Computer Science Tutor"
+    time: Jul 2016 -> Dec 2017
+    text:
+      - I began tutoring for UNSW in second year for subjects that I enjoyed. This involved teaching classes, instructing labs, and marking homework/assignments.
+      - I tutored <em>Software Construction Techniques</em>, <em>Introduction to Programming</em>, and <em>Computer System Fundamentals</em>.
+contact:
+  - name: Github
+    image: github.svg
+    link: https://github.com/sawatdekrap
+  - name: Email
+    image: gmail.svg
+    link: mailto:matthew.g.french@gmail.com
+  - name: LinkedIn
+    image: linkedin.svg
+    link: https://www.linkedin.com/in/matthew-french-a50990144/

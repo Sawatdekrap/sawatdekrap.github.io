@@ -1,207 +1,67 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <title>Matthew French</title>
-    <style>
-    body {
-        margin: 0;
-        background-color: #f0f0f0;
-        font-family: monospace;
-    }
-    hr {
-        width: 80%;
-    }
-    .content {
-        border-radius: 20px;
-        max-width: 1000px;
-        margin: auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        padding: 2em;
-        text-align: center;
-        background-color: white;
-    }
-    .abstract {
-        width: 500px;
-        margin: auto;
-        font-style: italic;
-    }
-    .section-container {
-        display: flex;
-        flex-direction: column;
-    }
-    @media (min-width: 576px) {
-        .section-container {
-            flex-direction: row;
-        }
-    }
-    .section {
-        flex: 1;
-        margin: 1em;
-    }
-    .section-text>p>a {
-        text-decoration: none;
-        font-weight: bold;
-    }
-    .icon {
-        height: 120px;
-        margin: auto;
-    }
-    .skills {
-        margin-bottom: 2em;
-    }
-    .skills>span {
-        display: inline-block;
-        border: 1px solid grey;
-        border-radius: 3px;
-        padding: 2px;
-        background-color: lightgrey;
-        font-family: monospace;
-        font-weight: bold;
-    }
-    .experience-container {
-        display: flex;
-    }
-    .experience {
-        flex: 1
-    }
-    .experience>img, .experience>svg {
-        width: 200px;
-        margin: auto;
-    }
-    .experience-detail {
-        flex: 1 auto auto
-    }
-    .link {
-        text-decoration: none;
-    }
-    </style>
-</head>
-<body>
-    <div class='content'>
-        <div style='color: green'>
-            <svg height="100px" width="87.376" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 43.688">
-                <path d="M 2.343,25.944 C 0.938,25.006 0,23.133 0,21.492 0,19.852 0.703,18.33 2.46,17.51 H 2.343 C 10.66,12.59 22.258,6.0299995 29.99,1.4609995 V 12.356 c -3.046,1.757 -7.146,3.749 -17.455,9.255 l 0.117,0.116 c 5.506,2.461 11.832,6.209 17.338,9.489 V 42.228 L 2.343,25.944 z"/>
-                <path d="m 97.657,17.744 c 1.404,0.938 2.343,2.812 2.343,4.452 0,1.64 -0.703,3.162 -2.461,3.982 h 0.118 C 89.34,31.098 77.741,37.658 70.01,42.227 V 31.332 c 3.046,-1.756 7.146,-3.748 17.455,-9.254 L 87.348,21.962 C 81.843,19.501 75.516,15.753 70.01,12.473 V 1.4609995 L 97.657,17.744 z"/>
-                <path d="M 46.401,43.688 H 39.39 L 53.48,-4.5462934e-7 h 7.13 L 46.401,43.688 z"/>
-            </svg>
-        </div>
-        <h1>Matthew French</h1>
-        <div class='abstract'>
-            <p>I am a software engineer based in Sydney, Australia. Most of my work involves building web applications and the architecture surrounding them. I am most proficient in Python and use it for most of my development, but like to dabble in other languages and projects.</p>
-            <p>I graduated from the University of New South Wales, and am currently employed at QBE Insurance as a Software Engineer.</p>
-        </div>
-        <hr>
-
-        <h1>Skills</h1>
-        <div class='section-container'>
-            <div class='section'>
-                <img class='icon' src='python.png'></img>
-                <h2>Python</h2>
-                <div class='section-text'>
-                    <p>Python is the language I use most at work and enjoy using at home. I have a lot of experience using packages like <a href='#'>Flask</a> and <a href='#'>SQLAlchemy</a> for building web-based solutions.</p>
-                    <p>I really enjoy using the language and find it useful outside of work for webscraping, solving <a href='#'>Euler Project</a> problems, or other ideas I have.</p>
-                </div>
-            </div>
-            <div class='section'>
-                <img class='icon' src='docker.png'></img>
-                <h2>Docker</h2>
-                <div class='section-text'>
-                    <p>I use Docker for containerization of web projects, and have experience deploying and maintaining web services on a cluster using Docker Swarm.</p>
-                    <p>Besides use at work, I maintain a small homelab at home to host small services and help me continue to learn.</p>
-                </div>
-            </div>
-            <div class='section'>
-                <img class='icon' src='javascript.png'></diimgv>
-                <h2>Web Development</h2>
-                <div class='section-text'>
-                    <p>I really enjoy (trying to) make web pages look nice. When I can't do that, I just make things work as they're supposed to.</p>
-                    <p>I am competent with HTML, CSS and Javascript. I've built a lot of frontends for various jobs, and have some hobby-level experience with <a href='#'>React</a></p>
-                </div>
-            </div>
-        </div>
-        <h3>As well as...</h3>
-        <div class='skills'>
-            <span>Javascript</span>
-            <span>Something</span>
-        </div>
-        <hr>
-
-        <h1>Experience</h1>
-        <div class='section-container'>
-            <div class='section'>
-                <!--
-                <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99 29" preserveAspectRatio="xMinYMin meet" title="qbe logo">
-                    <g fill="none" fill-rule="evenodd">
-                        <path fill="#282828" d="M53.944 23.868c-1.401-1.282-2.909-2.274-4.519-2.942-1.61-.677-3.248-1.015-4.913-1.015-.477 0-.932.035-1.378.105a8.39 8.39 0 0 0-1.309.313c.98 1.402 2.178 2.494 3.606 3.26a9.695 9.695 0 0 0 4.625 1.156c.604 0 1.221-.073 1.861-.222.637-.132 1.312-.362 2.027-.655zm3.006-2.225c.989-1.131 1.71-2.27 2.164-3.453.452-1.17.673-2.514.673-4.01a9.824 9.824 0 0 0-.687-3.646 9.947 9.947 0 0 0-2-3.162c-1.023-1.116-2.13-1.942-3.313-2.474-1.184-.533-2.502-.811-3.955-.811-1.29 0-2.52.247-3.687.743a9.527 9.527 0 0 0-3.098 2.127 10.457 10.457 0 0 0-2.243 3.434 10.576 10.576 0 0 0-.78 4.025c0 .425.036.891.103 1.37.066.478.176.969.309 1.497a7.845 7.845 0 0 1 1.99-.68c.73-.153 1.57-.216 2.523-.216 2.038 0 4.086.448 6.15 1.355 2.062.909 4.009 2.202 5.851 3.901zm.53 4.783a13.31 13.31 0 0 1-3.621 1.677 13.719 13.719 0 0 1-3.992.576c-1.602 0-3.136-.267-4.613-.77a13.974 13.974 0 0 1-4.046-2.26 13.778 13.778 0 0 1-3.915-5.018c-.91-1.96-1.363-4.095-1.363-6.404 0-1.912.36-3.734 1.092-5.445.724-1.713 1.792-3.278 3.193-4.699a13.922 13.922 0 0 1 4.423-2.967C46.26.44 48.005.11 49.868.11c1.92 0 3.692.33 5.327 1.006 1.636.68 3.127 1.676 4.485 3.015a13.946 13.946 0 0 1 3.165 4.713c.708 1.748 1.061 3.656 1.061 5.708 0 1.8-.285 3.456-.85 4.988-.563 1.51-1.42 2.94-2.57 4.253.485.236.99.403 1.498.512a7.96 7.96 0 0 0 1.66.165h.504v3.844h-.352a11.13 11.13 0 0 1-3.103-.466 14.779 14.779 0 0 1-3.213-1.422zM70.39 12.181h1.273c2.076 0 3.549-.322 4.433-.942.88-.642 1.322-1.672 1.322-3.132 0-1.277-.4-2.232-1.202-2.853-.8-.624-2.025-.932-3.672-.932H70.39v7.859zm-.04 12.366h3.16c1.847 0 3.211-.342 4.08-1.045.875-.685 1.31-1.753 1.31-3.205 0-1.58-.452-2.775-1.366-3.581-.907-.808-2.248-1.225-4.023-1.225H70.35v9.056zM72.374.552c2.949 0 5.195.646 6.729 1.936 1.537 1.297 2.302 3.193 2.302 5.66 0 1.148-.248 2.155-.754 3.043-.504.875-1.232 1.605-2.203 2.167 1.36.401 2.43 1.186 3.214 2.35.785 1.157 1.18 2.53 1.18 4.14a9.227 9.227 0 0 1-.726 3.647c-.481 1.134-1.141 2.08-1.995 2.82a7.636 7.636 0 0 1-2.834 1.536c-1.063.302-2.555.45-4.476.45h-6.388V.552h5.95zM98.947 28.301H84.58V.552h14.367V4.26H88.59v8.29h10.357v3.598H88.59v8.32h10.357v3.833"></path>
-                        <path fill="#00AFF4" d="M23.417 20.874a2.986 2.986 0 0 0 2.114-.88c.544-.55.882-1.3.882-2.133a2.95 2.95 0 0 0-.426-1.541L19.816 5.58A7.202 7.202 0 0 0 16.641.618a6.142 6.142 0 0 1 6.475 2.976l6.316 10.967a6.178 6.178 0 0 1-2.254 8.43 6.127 6.127 0 0 1-8.31-2.117h4.549"></path>
-                        <path fill="#00AFF4" d="M23.398 15.92h-7.705l-2.221 3.871h9.926a1.93 1.93 0 0 0 1.93-1.93 1.94 1.94 0 0 0-1.93-1.94M15.8 5.65a2.959 2.959 0 0 0-1.82-1.387 2.994 2.994 0 0 0-2.289.298c-.482.288-.865.68-1.122 1.135L4.395 16.435a7.238 7.238 0 0 0-2.709 5.237 6.179 6.179 0 0 1-.665-7.111L7.34 3.594a6.125 6.125 0 0 1 8.401-2.259c2.89 1.673 3.913 5.342 2.333 8.27L15.801 5.65"></path>
-                        <path fill="#00AFF4" d="M11.531 8.145l3.853 6.69h4.45l-4.964-8.62a1.919 1.919 0 0 0-2.636-.704 1.929 1.929 0 0 0-.703 2.634M6.46 19.882a3.03 3.03 0 0 0-.292 2.284 3.008 3.008 0 0 0 1.404 1.827c.486.278 1.021.413 1.546.402h12.349a7.217 7.217 0 0 0 5.885-.258c-.84 2.404-3.126 4.136-5.808 4.136H8.91c-3.396 0-6.151-2.767-6.151-6.175 0-3.35 2.66-6.07 5.98-6.17L6.46 19.882"></path>
-                        <path fill="#00AFF4" d="M10.744 22.352l3.858-6.696-2.228-3.868-4.966 8.625a1.936 1.936 0 0 0 .707 2.643 1.93 1.93 0 0 0 2.629-.704"></path>
-                    </g>
-                </svg>
-                -->
-                <h2>QBE: Grad -> Software Engineer</h2>
-                <div class='section-text'>
-                    <p><strong>Feb 2018 -> Present</strong></p>
-                    <p>I began at QBE in the AusPac Data and Analytics team in a graduate position, and 'graduated' into my current Software Engineer role.</p>
-                    <p>During my time at QBE I have worked on web applications that have brought millions in savings to the company. I also worked on deployments and maintenance for several services on our VM cluster.</p>
-                </div>
-            </div>
-
-
-            <div class='section'>
-                <h2>UNSW: Computer Science Tutor</h2>
-                <div class='section-text'>
-                    <p><strong>Jul 2016 -> Dec 2017</strong></p>
-                    <p>I began tutoring for UNSW in second year for subjects that I enjoyed. This involved teaching classes, instructing labs, and marking homework/assignments.</p>
-                    <p>I tutored <em>Software Construction Techniques</em>, <em>Introduction to Programming</em>, and <em>Computer System Fundamentals</em></p>
-                </div>
-            </div>
-        </div>
-        <hr>
-
-        <!--https://github.com/gilbarbara/logos/tree/master/logos-->
-        <h1>Contact</h1>
-        <p>matthew.g.french@gmail.com</p>
-        <p>OR</p>
-        <a href='https://github.com/sawatdekrap' target='_blank' class='link'>
-            <svg height="32" width="32" viewbox="0 0 16 16">
-                <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-            </svg>
-        </a>
-        <a href='https://www.linkedin.com/in/matthew-french-a50990144/' target='_blank' class='link'>
-            <svg width="32" height="32" viewBox="0 0 130 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
-                <g>
-                    <path d="M119.763599,0 L9.342566,0 C4.065996,0 0.779234,4.18238313 0.779234,9.33927592 L0.779234,120.224619 C0.779234,125.386011 4.065996,129.574692 9.342566,129.574692 L119.763599,129.574692 C125.049167,129.574692 129.355726,125.386011 129.355726,120.224619 L129.355726,9.33927592 C129.355726,4.18238313 125.049167,0 119.763599,0" fill="#006087"></path>
-                    <path d="M28.603304,17.8390158 C34.749104,17.8390158 39.741329,22.8321406 39.741329,28.9788401 C39.741329,35.1300387 34.749104,40.1249631 28.603304,40.1249631 C22.444907,40.1249631 17.458981,35.1300387 17.458981,28.9788401 C17.458981,22.8321406 22.444907,17.8390158 28.603304,17.8390158 L28.603304,17.8390158 Z M18.990482,48.5779121 L38.208928,48.5779121 L38.208928,110.414735 L18.990482,110.414735 L18.990482,48.5779121 Z" fill="#FFFFFF"></path>
-                    <path d="M50.262974,48.5779121 L68.699473,48.5779121 L68.699473,57.026362 L68.955023,57.026362 C71.519522,52.1655114 77.789497,47.0392127 87.138671,47.0392127 C106.60007,47.0392127 110.193069,59.8464112 110.193069,76.4958594 L110.193069,110.414735 L90.98812,110.414735 L90.98812,80.3435079 C90.98812,73.1692091 90.855845,63.9460105 81.00097,63.9460105 C70.999424,63.9460105 69.467923,71.7582847 69.467923,79.8243093 L69.467923,110.414735 L50.262974,110.414735 L50.262974,48.5779121" fill="#FFFFFF"></path>
-                </g>
-            </svg>
-        </a>
-
-        <a href='mailto:matthew.g.french@gmail.com' class='link'>
-            <svg width="43" height="32" viewBox="0 0 256 194" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
-                <defs>
-                    <linearGradient x1="0.00388991071%" y1="49.997619%" x2="100.032232%" y2="49.997619%" id="linearGradient-1">
-                        <stop stop-color="#000000" stop-opacity="0.1" offset="0%"></stop>
-                        <stop stop-color="#000000" stop-opacity="0.2" offset="100%"></stop>
-                    </linearGradient>
-                </defs>
-                <g>
-                    <path d="M238.833923,193.595007 L16.1542195,193.595007 C7.51970044,193.595007 0.248526454,186.551057 0.248526454,177.689314 L0.248526454,16.8145898 C0.248526454,8.18007073 7.29247625,0.908896748 16.1542195,0.908896748 L238.833923,0.908896748 C247.468442,0.908896748 254.739616,7.95284654 254.739616,16.8145898 L254.739616,177.689314 C254.739616,186.551057 247.695666,193.595007 238.833923,193.595007 L238.833923,193.595007 Z" fill="#E3E3E3"></path>
-                    <path d="M32.0599126,193.595007 L127.266847,117.020456 L127.94852,112.930421 L29.7876708,42.2636988 L29.5604466,190.186644 L32.0599126,193.595007 Z" opacity="0.1" fill="#231F20"></path>
-                    <path d="M16.1542195,193.595007 C7.29247625,193.595007 0.248526454,186.551057 0.248526454,177.689314 L0.248526454,16.5873656 C0.248526454,7.72562236 7.29247625,6.13505305 16.1542195,6.13505305 C25.0159628,6.13505305 32.0599126,7.95284654 32.0599126,16.5873656 L32.0599126,193.595007 L16.1542195,193.595007 L16.1542195,193.595007 Z" fill="#D54B3D"></path>
-                    <path d="M16.1542195,8.40729492 C27.5154289,8.40729492 29.7876708,11.8156577 29.7876708,16.5873656 L29.7876708,191.322765 L16.1542195,191.322765 C8.65582137,191.322765 2.52076832,185.187712 2.52076832,177.689314 L2.52076832,16.5873656 C2.52076832,11.5884335 4.79301019,8.40729492 16.1542195,8.40729492 L16.1542195,8.40729492 Z M16.1542195,6.13505305 C7.29247625,6.13505305 0.248526454,7.95284654 0.248526454,16.5873656 L0.248526454,177.689314 C0.248526454,186.551057 7.29247625,193.595007 16.1542195,193.595007 L32.0599126,193.595007 L32.0599126,16.5873656 C32.0599126,7.72562236 25.0159628,6.13505305 16.1542195,6.13505305 L16.1542195,6.13505305 L16.1542195,6.13505305 Z" fill="#D72B27"></path>
-                    <path d="M238.833923,193.595007 L222.92823,193.595007 L222.92823,16.1329173 C222.92823,7.27117398 229.972179,6.13505305 238.833923,6.13505305 C247.695666,6.13505305 254.739616,7.27117398 254.739616,16.1329173 L254.739616,177.916538 C254.739616,186.551057 247.695666,193.595007 238.833923,193.595007 L238.833923,193.595007 Z" fill="#D54B3D"></path>
-                    <path d="M238.833923,8.40729492 C249.059011,8.40729492 252.467374,10.4523126 252.467374,16.1329173 L252.467374,177.916538 C252.467374,185.414937 246.332321,191.54999 238.833923,191.54999 L225.200472,191.54999 L225.200472,16.1329173 C225.200472,10.2250884 228.608834,8.40729492 238.833923,8.40729492 L238.833923,8.40729492 Z M238.833923,6.13505305 C229.972179,6.13505305 222.92823,7.27117398 222.92823,16.1329173 L222.92823,193.822231 L238.833923,193.822231 C247.695666,193.822231 254.739616,186.778282 254.739616,177.916538 L254.739616,16.1329173 C254.739616,7.27117398 247.695666,6.13505305 238.833923,6.13505305 L238.833923,6.13505305 L238.833923,6.13505305 Z" fill="#D72B27"></path>
-                    <path d="M170.666667,193.595007 L1.57979906,23.1947544 L10.4736149,26.8124541 L128.175744,111.567076 L254.73962,18.7604631 L254.739616,177.916538 C254.739616,186.551057 247.695666,193.595007 238.833923,193.595007 L170.666667,193.595007 Z" fill="url(#linearGradient-1)"></path>
-                    <path d="M127.266847,117.020456 L7.06525206,29.7663685 C0.0213022675,24.5402122 -2.02371542,14.542348 3.20244088,7.49839817 C8.42859718,0.454448374 18.6536856,-1.13612093 25.9248596,4.09003537 L127.494071,77.9378961 L229.744955,3.18113862 C236.788905,-2.04501768 246.786769,-0.454448374 252.012926,6.81672561 C257.239082,13.8606754 255.648513,23.8585396 248.377339,29.0846959 L127.266847,117.020456 L127.266847,117.020456 Z" fill="#D54B3D"></path>
-                    <path d="M238.833923,2.27224187 L238.833923,2.27224187 C243.151182,2.27224187 247.241218,4.31725955 249.967908,7.95284654 C254.285167,14.0878996 252.921822,22.4951945 247.013993,27.0396782 L127.266847,114.293766 L8.42859718,27.948575 C2.29354414,23.4040913 0.702974828,14.7695722 5.02023438,8.86174329 C7.51970044,5.45338049 11.83696,3.18113862 16.3814437,3.18113862 C19.3353582,3.18113862 22.2892726,4.09003537 24.5615145,5.90782886 L125.903502,79.5284654 L127.266847,80.4373622 L128.630192,79.5284654 L230.653852,4.77170793 C233.153318,3.18113862 235.880008,2.27224187 238.833923,2.27224187 L238.833923,2.27224187 Z M238.833923,0 C235.652784,0 232.244421,0.908896748 229.517731,2.95391443 L127.266847,77.7106719 L25.6976354,3.86281118 C22.9709451,1.8177935 19.5625823,0.908896748 16.1542195,0.908896748 C11.1552874,0.908896748 6.15635532,3.18113862 2.9752167,7.49839817 C-2.02371542,14.542348 0.0213022675,24.5402122 7.06525206,29.7663685 L127.266847,117.24768 L248.150114,29.0846959 C255.194064,23.8585396 256.784634,14.0878996 251.785701,6.81672561 C248.604563,2.27224187 243.832855,0 238.833923,0 L238.833923,0 L238.833923,0 Z" fill="#D72B27"></path>
-                </g>
-            </svg>
-        </a>
+---
+layout: default
+title: Matthew French
+---
+<div class='content'>
+    <div style='color: green'>
+        <svg height="100px" width="87.376" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 43.688">
+            <path d="M 2.343,25.944 C 0.938,25.006 0,23.133 0,21.492 0,19.852 0.703,18.33 2.46,17.51 H 2.343 C 10.66,12.59 22.258,6.0299995 29.99,1.4609995 V 12.356 c -3.046,1.757 -7.146,3.749 -17.455,9.255 l 0.117,0.116 c 5.506,2.461 11.832,6.209 17.338,9.489 V 42.228 L 2.343,25.944 z"/>
+            <path d="m 97.657,17.744 c 1.404,0.938 2.343,2.812 2.343,4.452 0,1.64 -0.703,3.162 -2.461,3.982 h 0.118 C 89.34,31.098 77.741,37.658 70.01,42.227 V 31.332 c 3.046,-1.756 7.146,-3.748 17.455,-9.254 L 87.348,21.962 C 81.843,19.501 75.516,15.753 70.01,12.473 V 1.4609995 L 97.657,17.744 z"/>
+            <path d="M 46.401,43.688 H 39.39 L 53.48,-4.5462934e-7 h 7.13 L 46.401,43.688 z"/>
+        </svg>
     </div>
-</body>
-</html>
+    <h1>Matthew French</h1>
+    <div class='abstract'>
+        {% for text in site.data.home.abstract %}
+        <p>{{ text }}</p>
+        {% endfor %}
+    </div>
+    <hr>
+
+    <h1>Skills</h1>
+    <div class='section-container'>
+        {% for skill in site.data.home.skills%}
+        <div class='section'>
+            <img class='icon' src='/assets/images/{{ skill.icon }}'></img>
+            <h2>{{ skill.name }}</h2>
+            <div class='section-text'>
+                {% for text in skill.text %}
+                <p>{{ text }}</p>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <h3>As well as...</h3>
+    <div class='skills'>
+        {% for skill in site.data.home.additional_skills %}
+        <span>{{ skill }}</span>
+        {% endfor %}
+    </div>
+    <hr>
+
+    <h1>Experience</h1>
+    <div class='section-container'>
+        {% for experience in site.data.home.experience %}
+        <div class='section'>
+            <h2>{{ experience.title }}</h2>
+            <div class='section-text'>
+                <p><strong>{{ experience.time }}</strong></p>
+                {% for text in experience.text %}
+                <p>{{ text }}</p>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <hr>
+
+    <h1>Contact</h1>
+    <p>matthew.g.french@gmail.com</p>
+    <p>OR</p>
+    {% for contact in site.data.home.contact %}
+    <a href='{{ contact.link }}' target='_blank' class='link'>
+        <img src='/assets/images/{{ contact.image }}' alt='{{ contact.name }}' class='contact'>
+    </a>
+    {% endfor %}
+</div>
